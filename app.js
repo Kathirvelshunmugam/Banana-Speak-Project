@@ -1,5 +1,9 @@
-var username=prompt("Enter your Name")
+var btntranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
+var outPut = document.querySelector("#output");
 
-var welcomemessage="This works"+" "+username;
+function clickHandler() {
+    outPut.innerText= txtInput.value;
+};
 
-alert(welcomemessage);
+btntranslate.addEventListener("click", clickHandler);
